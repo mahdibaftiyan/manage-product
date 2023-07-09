@@ -4,31 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>learn again</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>مدیریت محصولات</title>
 </head>
 
 <body>
 
-    <h1>Book store</h1>
 
-    <input type="text" name="search" id="search">
-    <input type="checkbox" name="filter" id="avilable">
+    <header>
+        <h1>مدیریت محصولات</h1>
+    </header>
 
-    <div class="showProduct"></div>
+    <main>
 
-    <form id="form">
-        <input type="text" name="addproduct">
-        <button id="add-product">
-            add product
+        <div class="contaienr">
+            <label for="avilable">محصولات موجود</label>
+            <input type="checkbox" name="filter" id="avilable" class="checkIn">
+            <input type="text" class="inclass" name="search" id="search" placeholder="جستجو محصول">
+        </div>
+
+        <select id="sort">
+            <option value="byEdited" selected>آخرین ویرایش</option>
+            <option value="bycreated">جدید ترین محصول</option>
+        </select>
+
+        <div class="showProduct"></div>
+
+        <form id="form">
+            <input type="text" class="inclass" name="addproduct">
+            <button class="btn" id="add-product">
+                add product
+            </button>
+        </form>
+
+        <button class="btn" id="remove-all-product">
+            remove all product
         </button>
-    </form>
 
-    <button id="remove-all-product">
-        remove all product
-    </button>
+    </main>
 
-
-    <script src="App.js"></script>
+    <script src="./scripts/moment.js"></script>
+    <script src="./scripts/uuid.js"></script>
+    <script src="./scripts/functions.js"></script>
+    <script src="./scripts/App.js"></script>
 </body>
 
 </html>

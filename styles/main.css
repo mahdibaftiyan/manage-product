@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: vazir;
+  src: url(../fonts/Vazirmatn-Medium.ttf);
+}
+
+body {
+  font-family: vazir;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: #efebe9;
+}
+
+main {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.contaienr {
+  margin: 0.6rem;
+}
+
+.inclass {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.checkIn {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem;
+}
+
+#sort {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-family: vazir;
+  margin: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-family: vazir;
+  margin: 1rem;
+}
+
+.showProduct {
+  background-color: #eeeeee;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.showProduct p {
+  margin: 0.7rem;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.showProduct p button {
+  background-color: #ff5722;
+  border-radius: 0.5rem;
+  font-family: vazir;
+  padding: 0.2rem;
+  margin: 0 0.7rem;
+  color: white;
+}
+
+.showProduct p span {
+  margin: 0 1.5rem 0 0;
+}
+.showProduct p a {
+  margin: 0 0.5rem 0 1.5rem;
+  color: #4caf50;
+}
+
+.showProduct p input {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem;
+}
